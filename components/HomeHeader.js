@@ -1,8 +1,10 @@
+import {useState} from 'react';
 import { View, Text, TextInput, Image } from 'react-native'
 
 import {COLORS, FONTS, SIZES, assets} from '../constants';
 
 const HomeHeader = ({onSearch}) => {
+ 
   return (
     <View
       style={{
@@ -97,7 +99,7 @@ const HomeHeader = ({onSearch}) => {
             style={{
               flex:1
             }}
-            onChange={onSearch}
+            onChangeText={onSearch}
           />
         </View>
       </View>
